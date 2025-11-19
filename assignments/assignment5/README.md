@@ -58,7 +58,7 @@ submissions/{학번}/assignment5/
 
 1. [https://github.com/HUFS-LAI-Seungtaek/HUFS-LAI-ML4E-2025-2](https://github.com/HUFS-LAI-Seungtaek/HUFS-LAI-ML4E-2025-2) 접속
 2. 본인의 Fork repository에서 작업
-3. **세 개의 Notebook 파일 작성**:
+3. **세 개의 Notebook 파일 작성** (Google Colab 또는 Jupyter Notebook 사용 가능):
    - `training.ipynb`: 모델 설계, 학습, 가중치 저장
    - `evaluation.ipynb`: 평가 지표 정의 및 성능 평가
    - `inference.ipynb`: 모델 로드 및 추론 예시
@@ -89,7 +89,7 @@ submissions/{학번}/assignment5/
   - `inference.ipynb`
 - `README.md` 제출
 
-#### 2. 모델 학습 (Training) 평가
+#### 2. Training
 - **모델 설계의 적절성**: 프로젝트에 맞는 모델 선택
 - **데이터셋 분할의 명확성**: Train/Validation/Test 분할 비율 명시
 - **학습 과정의 투명성**:
@@ -98,24 +98,29 @@ submissions/{학번}/assignment5/
   - Validation 성능 모니터링
 - **재현 가능성**: 모델 가중치를 저장하고 복원 가능
 
-#### 3. 모델 평가 (Evaluation) 평가 (가장 중요)
+#### 3. Evaluation
 
-평가 지표가 명확하게 정의되고 계산되어야 합니다. 문제 유형에 맞는 지표를 선택하고, 각 지표의 정의와 계산 코드가 명시적으로 드러나야 합니다. 주요 성능 수치는 정리된 표 형태로 표현되어야 합니다. Test set에서만 최종 평가를 수행하고, 평가 과정이 단계별로 명확해야 합니다. 필요에 따라 여러 번의 실험이나 Cross-validation을 고려할 수 있습니다.
+- 평가 지표가 명확하게 정의되고 계산되어야 합니다. 
+- 문제 유형에 맞는 지표를 선택하고, 각 지표의 정의와 계산 코드가 명시적으로 드러나야 합니다. 
+- 주요 성능 수치는 (되도록) 정리된 표 형태로 표현되어야 합니다. 
+- Test set에서만 최종 평가를 수행하고, 평가 과정이 단계별로 명확해야 합니다. 
+- 필요에 따라 여러 번의 실험이나 cross-validation을 고려할 수 있습니다.
 
-#### 4. 모델 추론 (Inference) 평가
+#### 4. Inference 평가
 - **모델 가중치 접근성**: Google Drive 혹은 HuggingFace에서 접근 가능해야함
 - **추론 코드의 완전성**: 모델 로드부터 결과 출력까지 독립적으로 실행 가능해야함
-- **예시값 포함**: 최소 3개 이상의 실제 추론 예시 제시
-- **재현성**: 교수가 inference 코드로 모델 평가 가능
+- **예시값 포함**: 최소 3개 이상의 실제 추론 예시 제시 (주제와의 관련성에 대해 다시 한번 생각해주세요)
+- **재현성**: inference 코드만으로도 모델 실제 실행 및 평가가 가능해야 합니다
 
-#### 5. 프로젝트 문서 (README.md) 평가
+#### 5. README.md 평가
 
-README.md에는 모델 아키텍처에 대한 설명과 평가 지표 및 성능 결과가 정리되어 있어야 합니다. 
-모델 가중치의 저장 위치가 명시되어야 하며, 주요 발견 사항과 모델의 제한사항을 기록하는 것이 좋습니다.
+README.md에는 모델 아키텍처에 대한 설명과 평가 지표 및 성능 결과가 정리되어 있어야 합니다.
+
+모델 가중치의 저장 위치가 명시되어야 하며, 학습 및 평가 과정에서 발견한 특이사항과 한계 등을 기록하는 것이 좋습니다.
 
 ### 제출 시 주의사항
 
-**PR 형식 불일치로 merge가 불가능한 경우 0점 처리됩니다.** Assignment 4를 이미 제출했다면 이후부터는 예외를 주지 않습니다.
+**PR 형식 불일치로 merge가 불가능한 경우 0점 처리됩니다.**
 
 **Non-Pass 또는 감점 사유:**
 - 필수 파일 누락 (training, evaluation, inference)
