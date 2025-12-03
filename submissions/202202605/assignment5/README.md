@@ -48,3 +48,5 @@
 Confusion Matrix 요약
 실제 0 → 예측 1: 41
 실제 1 → 예측 0: 42
+
+https://drive.google.com/drive/folders/1oJOY1WUbx0Jd8e8v8EmIAh6uiFexDEut?usp=sharing
